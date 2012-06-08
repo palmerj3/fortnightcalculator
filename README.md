@@ -1,4 +1,4 @@
 fortnightcalculator
-===================
+======================
 
-Source for FornightCalculator.com
+Source for FortnightCalculator.com
