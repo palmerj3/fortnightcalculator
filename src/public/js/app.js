@@ -39,7 +39,7 @@
             inputValue = parseInt(inputField.value, 10),
             unitMeta = availableUnits[selectedUnit],
             result = inputValue * unitMeta['relativity'],
-            resultHTML = inputValue + ' ' + unitMeta['label'] + ' = ' + result + ' Fortnights!';
+            resultHTML = inputValue + ' ' + unitMeta['label'] + ' = ' + result + ' Fortnight!';
 
         // Show results
         resultElement.innerHTML = resultHTML;
