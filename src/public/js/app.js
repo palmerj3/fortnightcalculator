@@ -11,11 +11,11 @@
         availableUnits = {
           'hour' : {
             'label' : 'Hours',
-            'relativity' : 0.00297619048
+            'relativity' : 0.002976190488
           },
           'day' : {
             'label' : 'Days',
-            'relativity' : 0.0714285714
+            'relativity' : 0.071428571712
           },
           'week' : {
             'label' : 'Weeks',
@@ -23,11 +23,11 @@
           },
           'month' : {
             'label' : 'Months',
-            'relativity' : 2.17406071
+            'relativity' : 2.14285715136
           },
           'year' : {
             'label' : 'Years',
-            'relativity' : 26.0887285
+            'relativity' : 26.07142867488
           }
       };
 
