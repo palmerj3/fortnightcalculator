@@ -8,26 +8,27 @@
         cancelButton = d.getElementById('dob-cancel'),
         resultElement = d.getElementById('result'),
         resultContainer = d.getElementById('result-container'),
+        fortnightPerSecond = 0.00000082671958,
         availableUnits = {
           'hour' : {
             'label' : 'Hours',
-            'relativity' : 0.002976190488
+            'relativity' : 3600
           },
           'day' : {
             'label' : 'Days',
-            'relativity' : 0.071428571712
+            'relativity' : 86400
           },
           'week' : {
             'label' : 'Weeks',
-            'relativity' : 0.5
+            'relativity' : 604800
           },
           'month' : {
             'label' : 'Months',
-            'relativity' : 2.14285715136
+            'relativity' : 2592000
           },
           'year' : {
             'label' : 'Years',
-            'relativity' : 26.07142867488
+            'relativity' : 31536000
           }
       };
 
@@ -38,7 +39,7 @@
         var selectedUnit = unitField.options[unitField.selectedIndex].value,
             inputValue = parseInt(inputField.value, 10),
             unitMeta = availableUnits[selectedUnit],
-            result = inputValue * unitMeta['relativity'],
+            result = (inputValue * unitMeta['relativity']) * fortnightPerSecond,
             resultHTML = inputValue + ' ' + unitMeta['label'] + ' = ' + result + ' Fortnight!';
 
         // Show results
